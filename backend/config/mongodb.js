@@ -1,8 +1,8 @@
  import mongoose from "mongoose";
 
 
- const connectDb = async() => {
-    await mongoose.connect(`${process.env.MONGODB_URL}/hospital`)
+ const connectDB = async() => {
+    await mongoose.connect(`${process.env.MONGODB_URI}/hospital`)
  }
 
-export default connectDb
+export default connectDB
